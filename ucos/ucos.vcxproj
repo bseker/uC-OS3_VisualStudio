@@ -87,7 +87,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>App;AppCpp;Cfg;FrameWork\uC-CPU\Win32\Visual_Studio;FrameWork\uC-OS3\Ports\Win32\Visual_Studio;FrameWork\uC-CPU;FrameWork\uC-LIB;FrameWork\uC-OS3\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>App;AppCpp;Cfg;Micrium\uC-CPU\Win32\Visual_Studio;Micrium\uC-OS3\Ports\Win32\Visual_Studio;Micrium\uC-CPU;Micrium\uC-LIB;Micrium\uC-OS3\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,48 +147,49 @@
     <ClInclude Include="Cfg\os_app_hooks.h" />
     <ClInclude Include="Cfg\os_cfg.h" />
     <ClInclude Include="Cfg\os_cfg_app.h" />
-    <ClInclude Include="FrameWork\uC-CPU\cpu_core.h" />
-    <ClInclude Include="FrameWork\uC-CPU\cpu_def.h" />
-    <ClInclude Include="FrameWork\uC-CPU\Win32\Visual_Studio\cpu.h" />
-    <ClInclude Include="FrameWork\uC-LIB\lib_ascii.h" />
-    <ClInclude Include="FrameWork\uC-LIB\lib_def.h" />
-    <ClInclude Include="FrameWork\uC-LIB\lib_math.h" />
-    <ClInclude Include="FrameWork\uC-LIB\lib_mem.h" />
-    <ClInclude Include="FrameWork\uC-LIB\lib_str.h" />
-    <ClInclude Include="FrameWork\uC-OS3\Ports\Win32\Visual_Studio\os_cpu.h" />
-    <ClInclude Include="FrameWork\uC-OS3\Source\os.h" />
-    <ClInclude Include="FrameWork\uC-OS3\Source\os_trace.h" />
-    <ClInclude Include="FrameWork\uC-OS3\Source\os_type.h" />
+    <ClInclude Include="Micrium\uC-CPU\cpu_cache.h" />
+    <ClInclude Include="Micrium\uC-CPU\cpu_core.h" />
+    <ClInclude Include="Micrium\uC-CPU\cpu_def.h" />
+    <ClInclude Include="Micrium\uC-CPU\Win32\Visual_Studio\cpu.h" />
+    <ClInclude Include="Micrium\uC-LIB\lib_ascii.h" />
+    <ClInclude Include="Micrium\uC-LIB\lib_def.h" />
+    <ClInclude Include="Micrium\uC-LIB\lib_math.h" />
+    <ClInclude Include="Micrium\uC-LIB\lib_mem.h" />
+    <ClInclude Include="Micrium\uC-LIB\lib_str.h" />
+    <ClInclude Include="Micrium\uC-OS3\Ports\Win32\Visual_Studio\os_cpu.h" />
+    <ClInclude Include="Micrium\uC-OS3\Source\os.h" />
+    <ClInclude Include="Micrium\uC-OS3\Source\os_trace.h" />
+    <ClInclude Include="Micrium\uC-OS3\Source\os_type.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AppCpp\AppCpp.cpp" />
     <ClCompile Include="App\app.c" />
     <ClCompile Include="Bsp\bsp_cpu.c" />
     <ClCompile Include="Cfg\os_app_hooks.c" />
-    <ClCompile Include="FrameWork\uC-CPU\cpu_core.c" />
-    <ClCompile Include="FrameWork\uC-CPU\Win32\Visual_Studio\cpu_c.c" />
-    <ClCompile Include="FrameWork\uC-LIB\lib_ascii.c" />
-    <ClCompile Include="FrameWork\uC-LIB\lib_math.c" />
-    <ClCompile Include="FrameWork\uC-LIB\lib_mem.c" />
-    <ClCompile Include="FrameWork\uC-LIB\lib_str.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Ports\Win32\Visual_Studio\os_cpu_c.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_cfg_app.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_core.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_dbg.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_flag.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_mem.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_msg.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_mutex.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_prio.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_q.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_sem.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_stat.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_task.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_tick.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_time.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_tmr.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\os_var.c" />
-    <ClCompile Include="FrameWork\uC-OS3\Source\__dbg_uCOS-III.c" />
+    <ClCompile Include="Micrium\uC-CPU\cpu_core.c" />
+    <ClCompile Include="Micrium\uC-CPU\Win32\Visual_Studio\cpu_c.c" />
+    <ClCompile Include="Micrium\uC-LIB\lib_ascii.c" />
+    <ClCompile Include="Micrium\uC-LIB\lib_math.c" />
+    <ClCompile Include="Micrium\uC-LIB\lib_mem.c" />
+    <ClCompile Include="Micrium\uC-LIB\lib_str.c" />
+    <ClCompile Include="Micrium\uC-OS3\Ports\Win32\Visual_Studio\os_cpu_c.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_cfg_app.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_core.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_dbg.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_flag.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_mem.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_msg.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_mutex.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_prio.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_q.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_sem.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_stat.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_task.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_tick.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_time.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_tmr.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\os_var.c" />
+    <ClCompile Include="Micrium\uC-OS3\Source\__dbg_uCOS-III.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
