@@ -1,0 +1,9 @@
+[submodule "ucos/Micrium/uC-OS3"]
+	path = ucos/Micrium/uC-OS3
+	url = https://github.com/bseker/uC-OS3
+[submodule "ucos/Micrium/uC-CPU"]
+	path = ucos/Micrium/uC-CPU
+	url = https://github.com/bseker/uC-CPU
+[submodule "ucos/Micrium/uC-LIB"]
+	path = ucos/Micrium/uC-LIB
+	url = https://github.com/bseker/uC-LIB
