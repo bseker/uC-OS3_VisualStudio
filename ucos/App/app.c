@@ -30,7 +30,7 @@ void main(void)
     OSTaskCreate((OS_TCB*)&AppTaskStartTCB,
         (CPU_CHAR*)"App Task Start",
         (OS_TASK_PTR)AppTaskStart,
-        (void*)0,
+        (void*)&AppTaskStartTCB,
         (OS_PRIO)APP_TASK_START_PRIO,
         (CPU_STK*)&AppTaskStartStk[0],
         (CPU_STK_SIZE)APP_TASK_START_STK_SIZE / 10,
@@ -61,16 +61,6 @@ static  void  AppTaskStart(void* p_arg)
   
     StartApp();
 
-    while (1) {
-
-        OSTimeDlyHMSM((CPU_INT16U)0,
-            (CPU_INT16U)0,
-            (CPU_INT16U)0,
-            (CPU_INT32U)100,
-            (OS_OPT)OS_OPT_TIME_HMSM_STRICT,
-            (OS_ERR*)&err);
-
-
-    }
+    OSTaskSuspend(p_arg, &err);
 
 }
