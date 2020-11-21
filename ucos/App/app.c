@@ -27,6 +27,9 @@ void main(void)
         /* Something didn’t get initialized correctly ...                    */
         /* ... check os.h for the meaning of the error code, see OS_ERR_xxxx */
     }
+
+    App_OS_SetAllHooks();
+
     OSTaskCreate((OS_TCB*)&AppTaskStartTCB,
         (CPU_CHAR*)"App Task Start",
         (OS_TASK_PTR)AppTaskStart,
